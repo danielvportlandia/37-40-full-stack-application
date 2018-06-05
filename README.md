@@ -1,42 +1,35 @@
-# 401 JS --  Lab 37 Full-Stack Auth
+**Author**: Daniel Shelton
+**Version**: 1.0.1
 
-## Submission Instructions
-  * Work in a fork of this repository
-  * Work in a branch on your fork
-  * Submit a pull request to this repository
-  * Submit a link to your pull request on canvas
-  * Submit a question, observation, and how long you spent on canvas  
+# Overview
+Bloomio is a plant-care schedule assistant which utilizes a MongoDB.
 
-## Configuration  
-#### backend/
-* Copy your mid-project into this directory
-  * Remove the .git folder from the backend project directory before committing
-  
-#### frontend/
-* Develop your entire front-end under this folder
- 
-## Feature Tasks 
-* Implement Login/Signup functionality for your mid-term project.
-* Use react/redux best practices
-* Add reporter and thunk middleware to your redux store
-* make async action creators for making ajax requests to your backend
-* make sync action creators for updating your app store
+# Architecture
+## Front-end
+- Main: main.js
+- View Library: React
+- State Mgmt: Redux
+- Bundler: Webpack
+- Transpiler: Babel
+- Testing Suite: Jest
+- Continuous Integration: Travis CI
 
-#### Components
-```
-Provider
-  App
-    AuthRedirect
-    Landing
-      // handle login and signup
-    Dashboard
-      // display main app
-```
+## Back-end
+- Main: main.js
+- runTime: Node.js
+- Database: MongoDB
+- Router: Express.js
+- Transpiler: Babel
+- Testing Suite: Jest
+- Continuous Integration: Travis CI
 
-* Implement a Landing route that allows a user to signup and login to the application.
-* Manage the frontend routes based on the clients authorization
-  * If the user is not logged in they should be forced to remain on the landing route(s)
-  * If the user is logged in they should not permitted to remain on the landing route(s)
+# Testing
+To test the initial state of the Dashboard, enter the following in the CLI from the front-end directory:
 
-##  Documentation  
-Write a description of the project in your README.md
+`npm run test`
+
+To test the routers, enter the following in the CLI from the back-end directory:
+
+`npm run test`
+# Change Log
+06-05-2018 3:29PM - Scaffolding complete, able to render to the DOM.
