@@ -2,6 +2,7 @@
 
 import express from 'express';
 import mongoose from 'mongoose';
+import cors from 'cors';
 import logger from './logger';
 import errorMiddleware from './error-middleware';
 import accountRouter from '../route/account-router';
@@ -12,7 +13,10 @@ import plantResourceRouter from '../route/plant-resource-router';
 const app = express();
 let server = null;
 
-// routes will be app.use'd here
+app.use(cors({ 
+  origin: 'http://localhost:8080',
+  credentials: true, 
+}));
 app.use(accountRouter);
 app.use(profileRouter);
 app.use(plantRouter);

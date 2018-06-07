@@ -1,5 +1,5 @@
 **Author**: Daniel Shelton
-**Version**: 1.0.1
+**Version**: 1.0.2
 
 # Overview
 Bloomio is a plant-care schedule assistant which utilizes a MongoDB.
@@ -33,3 +33,4 @@ To test the routers, enter the following in the CLI from the back-end directory:
 `npm run test`
 # Change Log
 06-05-2018 3:29PM - Scaffolding complete, able to render to the DOM.
+06-06-2018 5:40PM - logout functionality added.
