@@ -34,3 +34,5 @@ To test the routers, enter the following in the CLI from the back-end directory:
 # Change Log
 06-05-2018 3:29PM - Scaffolding complete, able to render to the DOM.
 06-06-2018 5:40PM - logout functionality added.
+06-11-2018 1:30PM - Token persistance implemented with cookies.
+06-11-2018 2:41PM - Form validation added.
