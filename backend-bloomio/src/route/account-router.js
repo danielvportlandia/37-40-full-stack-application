@@ -25,7 +25,7 @@ accountRouter.post('/signup', jsonParser, (request, response, next) => {
     .then((token) => {
       logger.log('logger.INFO', 'AUTH - returning a 200 code and a token.');
       response.cookie('Bloomio-Token', token, { maxAge: 900000 });
-      return response.json({ token });
+      response.send(token);
     })
     .catch(next);
 });
@@ -38,7 +38,7 @@ accountRouter.get('/login', basicAuthMiddleware, (request, response, next) => {
     .then((token) => {
       logger.log(logger.INFO, 'LOGIN - responding with a 200 status and a token.');
       response.cookie('Bloomio-Token', token, { maxAge: 900000 });      
-      return response.json({ token });
+      response.send(token);
     })
     .catch(next);
 });
