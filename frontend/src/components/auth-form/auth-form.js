@@ -76,7 +76,7 @@ class AuthForm extends React.Component {
     this.setState({ 
       [name]: value,
       [`${name}Dirty`]: true,
-      [`${name}Error`]: this.handleValidation(name, value),    
+      [`${name}Error`]: this.handleValidation(name, value),
     });
   }
 

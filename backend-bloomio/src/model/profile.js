@@ -36,4 +36,6 @@ const profileSchema = mongoose.Schema({
   usePushEach: true,
 });
 
-export default mongoose.model('profile', profileSchema);
+const Profile = mongoose.model('profile', profileSchema);
+
+export default Profile;
